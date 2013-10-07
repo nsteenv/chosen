@@ -179,7 +179,7 @@ class Chosen extends AbstractChosen
     if @is_multiple
       @search_choices.find("li.search-choice").remove()
     else if not @is_multiple
-      this.single_set_selected_text()
+      # this.single_set_selected_text()
       if @disable_search or @form_field.options.length <= @disable_search_threshold
         @search_field[0].readOnly = true
         @container.addClass "chosen-container-single-nosearch"
@@ -190,7 +190,7 @@ class Chosen extends AbstractChosen
     this.update_results_content this.results_option_build({first:true})
 
     this.search_field_disabled()
-    this.show_search_field_default()
+    # this.show_search_field_default()
     this.search_field_scale()
 
     @parsing = false

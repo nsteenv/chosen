@@ -60,6 +60,7 @@ class Chosen extends AbstractChosen
       @search_container = @container.find('div.chosen-search').first()
       @selected_item = @container.find('.chosen-single').first()
 
+    this.show_search_field_default()
     this.results_build()
     this.set_tab_index()
     this.set_label_behavior()

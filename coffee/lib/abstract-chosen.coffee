@@ -131,7 +131,7 @@ class AbstractChosen
 
     searchText = this.get_search_text()
     escapedSearchText = searchText.replace(/[-[\]{}()*+?.,\\^$|#\s]/g, "\\$&")
-    escapedSearchText = "(" + escapedSearchText.replace(/\\\ /,").*(") + ")"
+    escapedSearchText = "(" + escapedSearchText.replace(/\\\ /,").* (") + ")"
 
     regexAnchor = if @search_contains then "" else "^"
     regex = new RegExp(regexAnchor + escapedSearchText, 'i')
